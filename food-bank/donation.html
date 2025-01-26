@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Bank Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+    }
+    .dashboard-bg {
+      background-color: #fbd24d;
+    }
+    .side-menu {
+      background-color: #2e3e1b;
+    }
+    .card {
+      background-color: white;
+      border-radius: 0.5rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body class="flex">
+  <!-- Sidebar -->
+  <div class="w-1/5 min-h-screen side-menu text-white p-4">
+    <h1 class="text-3xl font-bold mb-6">FOOD<span class="text-green-500">BANK</span></h1>
+    <div class="flex flex-col space-y-4">
+      <a href="dashboard.html" class="flex items-center space-x-2 p-2 rounded hover:bg-green-700">
+        <span>🔥</span>
+        <span>Dashboard</span>
+      </a>
+      <a href="#" class="p-2 rounded hover:bg-green-700">Make a Donation</a>
+      <a href="volunteers.html" class="p-2 rounded hover:bg-green-700">Volunteers</a>
+      <a href="#" class="p-2 rounded hover:bg-green-700">Account</a>
+      <a href="#" class="p-2 rounded hover:bg-red-600">Log Out</a>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="w-4/5 p-6 dashboard-bg">
+    <!-- Header -->
+    <div class="text-xl font-bold text-gray-800 mb-4">Happy Home</div>
+    <p class="text-sm text-gray-600 mb-4">Pitampura, New Delhi, India - 110034</p>
+
+    <!-- Donation Form -->
+    <div id="donation-form" class="mt-4 card p-6">
+      <h3 class="font-bold text-lg mb-4">New Donation Form</h3>
+      <form action="#" method="POST" class="space-y-4">
+        <div>
+          <label for="donation-type" class="block font-bold mb-1">What are you donating?</label>
+          <input type="text" id="donation-type" name="donation-type" class="w-full p-2 border rounded" required>
+        </div>
+        <div>
+          <label for="quantity" class="block font-bold mb-1">Quantity</label>
+          <input type="number" id="quantity" name="quantity" class="w-full p-2 border rounded" required>
+        </div>
+        <div>
+          <label for="address" class="block font-bold mb-1">Address</label>
+          <input type="text" id="address" name="address" class="w-full p-2 border rounded" required>
+        </div>
+        <div>
+          <label for="pin-code" class="block font-bold mb-1">Pin Code</label>
+          <input type="text" id="pin-code" name="pin-code" class="w-full p-2 border rounded" required>
+        </div>
+        <div>
+          <label for="phone" class="block font-bold mb-1">Phone Number</label>
+          <input type="tel" id="phone" name="phone" class="w-full p-2 border rounded" required>
+        </div>
+        <div>
+          <label for="pickup-time" class="block font-bold mb-1">Pick-Up Time</label>
+          <input type="datetime-local" id="pickup-time" name="pickup-time" class="w-full p-2 border rounded" required>
+        </div>
+        <button type="submit" class="w-full bg-green-600 text-white font-bold py-2 rounded">
+          Submit Donation
+        </button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

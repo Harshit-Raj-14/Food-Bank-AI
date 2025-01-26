@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volunteers</title>
+  <style>
+    body {
+      display: flex;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .sidebar {
+      width: 20%;
+      min-height: 100vh;
+      background-color: #2e3e1b;
+      color: white;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .sidebar h1 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .sidebar a {
+      text-decoration: none;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      display: block;
+    }
+    .sidebar a:hover {
+      background-color: #3a522b;
+    }
+    .sidebar .logout {
+      background-color: #aa0000;
+      text-align: center;
+    }
+    .sidebar .logout:hover {
+      background-color: #cc0000;
+    }
+    .main-content {
+      width: 80%;
+      padding: 20px;
+      background-color: #fbd24d;
+    }
+    .main-content h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .volunteer-card {
+      background-color: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+    .volunteer-card h2 {
+      font-size: 18px;
+      margin: 0 0 10px 0;
+    }
+    .volunteer-card p {
+      margin: 5px 0;
+      font-size: 14px;
+      color: #555;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <div>
+      <h1>FOOD<span style="color: #4caf50;">BANK</span></h1>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="#">Make a Donation</a>
+      <a href="volunteers.html">Volunteers</a>
+      <a href="#">Account</a>
+    </div>
+    <a href="#" class="logout">Log Out</a>
+  </div>
+
+  <div class="main-content">
+    <h1>Volunteers</h1>
+    <div class="grid">
+      <div class="volunteer-card">
+        <h2>John Smith</h2>
+        <p>Food Bank: Khana Daan Food Bank</p>
+        <p>Phone: +1 123-456-7890</p>
+      </div>
+      <div class="volunteer-card">
+        <h2>Emma Johnson</h2>
+        <p>Food Bank: Bhojan Food Bank</p>
+        <p>Phone: +1 234-567-8901</p>
+      </div>
+      <div class="volunteer-card">
+        <h2>Michael Brown</h2>
+        <p>Food Bank: Bhojanalya Food Bank</p>
+        <p>Phone: +1 345-678-9012</p>
+      </div>
+      <div class="volunteer-card">
+        <h2>Olivia Davis</h2>
+        <p>Food Bank: Khana Daan Food Bank</p>
+        <p>Phone: +1 456-789-0123</p>
+      </div>
+      <div class="volunteer-card">
+        <h2>William Wilson</h2>
+        <p>Food Bank: Bhojan Food Bank</p>
+        <p>Phone: +1 567-890-1234</p>
+      </div>
+      <div class="volunteer-card">
+        <h2>Sophia Martinez</h2>
+        <p>Food Bank: Bhojanalya Food Bank</p>
+        <p>Phone: +1 678-901-2345</p>
+      </div>
+      <div class="volunteer-card">
+        <h2>James Taylor</h2>
+        <p>Food Bank: Khana Daan Food Bank</p>
+        <p>Phone: +1 789-012-3456</p>
+      </div>
+      <div class="volunteer-card">
+        <h2>Isabella Anderson</h2>
+        <p>Food Bank: Bhojan Food Bank</p>
+        <p>Phone: +1 890-123-4567</p>
+      </div>
+      <div class="volunteer-card">
+        <h2>Benjamin Thomas</h2>
+        <p>Food Bank: Bhojanalya Food Bank</p>
+        <p>Phone: +1 901-234-5678</p>
+      </div>
+      <div class="volunteer-card">
+        <h2>Mia Moore</h2>
+        <p>Food Bank: Khana Daan Food Bank</p>
+        <p>Phone: +1 012-345-6789</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
