@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Bank Registration</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      flex-direction: column;
+    }
+
+    .header {
+      width: 100%;
+      height: 50px;
+      background-color: #f9a825;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    .header img {
+      height: 30px;
+    }
+
+    .container {
+      background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url('assets/reg.jpg');
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .form-card {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      max-width: 400px;
+      width: 100%;
+    }
+
+    .form-card h2 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .form-card p {
+      text-align: center;
+      font-size: 14px;
+      margin-bottom: 20px;
+      color: #555;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .form-group input,
+    .form-group select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    .form-group input[type="checkbox"] {
+      width: auto;
+      margin-right: 10px;
+    }
+
+    .form-group a {
+      color: #007bff;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .form-group a:hover {
+      text-decoration: underline;
+    }
+
+    .form-group .checkbox-wrapper {
+      display: flex;
+      align-items: center;
+    }
+
+    .register-btn {
+      background-color: #28a745;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 16px;
+    }
+
+    .register-btn:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <img src="https://via.placeholder.com/120x30" alt="Food Bank Logo"> <!-- Replace with your logo URL -->
+  </div>
+
+  <div class="container">
+    <div class="form-card">
+      <h2>Register your Business</h2>
+      <p>Create an account using an email and a password.</p>
+      <form>
+        <div class="form-group">
+          <label for="business-name">Name of Business</label>
+          <input type="text" id="business-name" placeholder="Enter your business name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="Enter your email address" required>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter your password" required>
+        </div>
+
+        <div class="form-group">
+          <label for="postcode">Postcode</label>
+          <input type="text" id="postcode" placeholder="Enter your postcode" required>
+        </div>
+
+        <div class="form-group">
+          <label for="area">Area</label>
+          <select id="area">
+            <option value="">Select an area</option>
+            <option value="urban">Urban</option>
+            <option value="rural">Rural</option>
+            <option value="suburban">Suburban</option>
+          </select>
+        </div>
+
+        <div class="form-group checkbox-wrapper">
+          <input type="checkbox" id="terms" required>
+          <label for="terms">Read and accept our <a href="#">Terms & Conditions</a></label>
+        </div>
+
+        <button type="submit" class="register-btn" onclick="window.location.href='dashboard.html';">Register</button>
+
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

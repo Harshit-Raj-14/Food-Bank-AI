@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Bank Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+    }
+    .dashboard-bg {
+      background-color: #fbd24d;
+    }
+    .side-menu {
+      background-color: #2e3e1b;
+    }
+    .card {
+      background-color: white;
+      border-radius: 0.5rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body class="flex">
+  <!-- Sidebar -->
+  <div class="w-1/5 min-h-screen side-menu text-white p-4">
+    <h1 class="text-3xl font-bold mb-6">FOOD<span class="text-green-500">BANK</span></h1>
+    <div class="flex flex-col space-y-4">
+      <a href="#" class="flex items-center space-x-2 p-2 rounded hover:bg-green-700">
+        <span>Dashboard</span>
+      </a>
+      <a href="donation.html" class="p-2 rounded hover:bg-green-700">Make a Donation</a>
+      <a href="volunteers.html" class="p-2 rounded hover:bg-green-700">Volunteers</a>
+      <a href="#" class="p-2 rounded hover:bg-green-700">Account</a>
+      <a href="#" class="p-2 rounded hover:bg-red-600">Log Out</a>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="w-4/5 p-6 dashboard-bg">
+    <!-- Header -->
+    <div class="text-xl font-bold text-gray-800 mb-4">Happy Home</div>
+    <p class="text-sm text-gray-600 mb-4">Pitampura, New Delhi, India - 110034</p>
+
+    <div class="flex space-x-4">
+      <!-- Make a new donation -->
+      <div class="flex-1 card p-4 flex items-center justify-center">
+        <a href="donation.html">
+          <button class="text-green-600 font-bold text-xl">+ Make a new donation</button>
+        </a>
+      </div>
+
+      <!-- Foodbank Requests -->
+      <div class="flex-1 card p-4">
+        <h3 class="font-bold text-lg mb-2">FOODBANK REQUESTS</h3>
+        <p class="text-sm text-gray-500 mb-4">Requests near you (within 7 km)</p>
+        <div class="space-y-2">
+          <div class="flex justify-between items-center p-2 bg-gray-100 rounded">
+            <div>
+              <p>Khana Daan Food Bank</p>
+              <p class="text-xs text-gray-400">1.2 kms • For 150 people</p>
+            </div>
+            <button class="text-green-600 font-bold">ASSIGN TO ME</button>
+          </div>
+          <div class="flex justify-between items-center p-2 bg-gray-100 rounded">
+            <div>
+              <p>Bhojan Food Bank</p>
+              <p class="text-xs text-gray-400">1.2 kms • For 150 people</p>
+            </div>
+            <button class="text-green-600 font-bold">ASSIGN TO ME</button>
+          </div>
+          <div class="flex justify-between items-center p-2 bg-gray-100 rounded">
+            <div>
+              <p>Bhojanalya Food Bank</p>
+              <p class="text-xs text-gray-400">1.2 kms • For 150 people</p>
+            </div>
+            <button class="text-green-600 font-bold">ASSIGN TO ME</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Order History -->
+      <div class="flex-1 card p-4">
+        <h3 class="font-bold text-lg mb-2">ORDER HISTORY</h3>
+        <p class="text-sm text-gray-500 mb-4">Monday, 15 April 2024, 13:05h</p>
+        <div class="space-y-2">
+          <div class="p-2 bg-gray-100 rounded">
+            <p class="font-bold">donation #13245</p>
+            <p class="text-xs text-gray-400">36 kgs • For 150 people</p>
+            <p class="text-xs text-gray-400">Location: Khana Daan Food Bank</p>
+            <button class="text-green-600 font-bold">DONE</button>
+          </div>
+          <div class="p-2 bg-gray-100 rounded">
+            <p class="font-bold">donation #23456</p>
+            <p class="text-xs text-gray-400">20 kgs • For 100 people</p>
+            <p class="text-xs text-gray-400">Location: Bhojan Food Bank</p>
+            <button class="text-green-600 font-bold">DONE</button>
+          </div>
+          <div class="p-2 bg-gray-100 rounded">
+            <p class="font-bold">donation #S112</p>
+            <p class="text-xs text-gray-400">Dal Makhni, Rice • 50 rupees</p>
+            <button class="text-green-600 font-bold">DONE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Subsidized Orders -->
+    <div class="mt-4 card p-4">
+      <h3 class="font-bold text-lg mb-2">Food Banks Near me</h3>
+      <p class="text-sm text-gray-500 mb-4">Food Banks near you (within 7 km)</p>
+      <div class="space-y-2">
+        <div class="flex justify-between items-center p-2 bg-gray-100 rounded">
+          <div>
+            <p>Khana Daan Food Bank</p>
+            <p class="text-xs text-gray-400">1.2 kms • 2 ser. Dal Makhni</p>
+          </div>
+          <button class="text-green-600 font-bold">DELIVER</button>
+        </div>
+        <div class="flex justify-between items-center p-2 bg-gray-100 rounded">
+          <div>
+            <p>Bhojan Food Bank</p>
+            <p class="text-xs text-gray-400">1.2 kms • 2 ser. Rajma Rice</p>
+          </div>
+          <button class="text-green-600 font-bold">DELIVER</button>
+        </div>
+        <div class="flex justify-between items-center p-2 bg-gray-100 rounded">
+          <div>
+            <p>Bhojanalya Food Bank</p>
+            <p class="text-xs text-gray-400">1.2 kms • 2 ser. Rajma Rice</p>
+          </div>
+          <button class="text-green-600 font-bold">DELIVER</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
